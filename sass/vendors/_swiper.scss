@@ -1,0 +1,106 @@
+.swiper {
+  padding-bottom: 30px;
+}
+.intro .swiper .swiper-slide img {
+  height: 43vh;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: #ff453a99;
+  opacity: 1;
+  margin: 0;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  &.swiper-pagination-bullet-active {
+    background: #ff453a;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 10px;
+    // transform: scale(1.1);
+    height: 10px;
+  }
+}
+.hero .swiper img.media__block {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hero__swiper .swiper-slide img {
+    height: 256px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+  }
+  .swiper-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet.swiper-pagination-bullet-active,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+  }
+  .swiper-pagination {
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+.swiper-prev-btn:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+.swiper-prev-btn.swiper-button:hover {
+  transform: scale(0.84);
+}
+.swiper-next-btn,
+.swiper-prev-btn {
+  transform: scale(0.84);
+  background: #FF453A73;
+ 
+  &:hover {
+    background: #FF453A;
+    transform: scale(1.1);
+  }
+  &.swiper-prev-btn {
+    transform: scale(0.84) rotate(180deg);
+    &:hover {
+      transform: scale(1.1) rotate(180deg);
+    }
+  }
+
+  transition: all 0.2s linear;
+  width: 62px;
+  background: #FF453A73;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.swiper-prev-btn {
+  transform: rotate(180deg);
+}
+.swiper-btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}

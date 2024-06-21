@@ -1,0 +1,168 @@
+button {
+  padding: 0;
+  cursor: pointer;
+}
+.outline__btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 9px 25px;
+  border: 2px solid #ff453a;
+  position: relative;
+  z-index: 1;
+  border-radius: 40px;
+  transition: all 0.2s linear;
+  box-shadow: 0px 0px 5px 1px #ff7a67;
+  color: #fff;
+  &:hover {
+    background: #ff453a;
+    span {
+      color: #fff;
+    }
+  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: transparent;
+  //   z-index: -1;
+  //   // border: 2px solid #ff7a67;
+  // 	box-shadow: 0 0 10px #ff7a67;
+  // }
+}
+
+.vk__btn {
+  min-width: 32px;
+  min-height: 32px;
+  max-width: 32px;
+  max-height: 32px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s linear;
+  &:hover {
+    background: #55a4ff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid #55a4ff;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 4px #65adff;
+    border-radius: 50%;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .outline__btn {
+    padding: 9px 22px;
+    font-size: 14px;
+  }
+  .vk__btn {
+    min-width: 26px;
+    min-height: 26px;
+    max-width: 26px;
+    max-height: 26px;
+    img {
+      width: 14px;
+      height: 8px;
+    }
+  }
+}
+
+.added__btn {
+  width: 290px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  .price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.01px;
+    color: #00ff0a;
+  }
+}
+.more__details {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.57px;
+  color: #bdbdbd;
+  padding: 12px 26px;
+  border-radius: 40px;
+  border: 2px solid #ffffff40 !important;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: #bdbdbd;
+    border-color: transparent !important;
+    color: #000000;
+  }
+}
+
+.pink__btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  padding: 18px 35px;
+  border-radius: 40px;
+  // border: 2px solid #a594fd;
+  width: fit-content;
+  display: inline-block;
+  transition: all 0.2s linear;
+  position: relative;
+
+  &:hover {
+    background: #a594fd;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #a594fd;
+    border-radius: 40px;
+    z-index: 3;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 4px #a594fd;
+    border-radius: 40px;
+    z-index: 2;
+  }
+}
